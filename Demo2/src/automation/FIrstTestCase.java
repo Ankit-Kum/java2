@@ -18,21 +18,41 @@ public class FIrstTestCase {
 	
 	public void searchProduct() 
 	{
-		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("bose");
-		driver.findElement(By.id("nav-search-submit-button")).click();
-		driver.findElement(By.linkText("Today's Deals")).click();
-		driver.findElement(By.linkText("Today's Deals")).click();
-		
+		//driver.findElement(By.id("twotabsearchtextbox")).sendKeys("bose");
+		//driver.findElement(By.id("nav-search-submit-button")).click();
+		//driver.findElement(By.linkText("Today's Deals")).click();	
+		driver.findElement(By.id("nav-link-accountList-nav-line-1")).click();
+		driver.findElement(By.linkText("Hello, sign in")).sendKeys("hi@gmail.com");
 	} 
 	
 	
+	public void navigate() 
+	{
+		//driver.navigate().to("https://www.cdac.in/");
+		//System.out.println("Title==> " +driver.getTitle());
+		
+	//	driver.navigate().to("https://www.google.com/");
+		//System.out.println("Title==> " +driver.getTitle());
+		
+		//driver.navigate().to("https://www.gmail.com/");
+		//System.out.println("Title==> " +driver.getTitle());
 
+	}
+	
+	public void closeBrowser() 
+	{
+		driver.quit();
+	}
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		FIrstTestCase ft = new FIrstTestCase();
 		ft.launchBrowser();
 		ft.searchProduct();
+		//ft.navigate();
+		ft.closeBrowser();
 	}
 
 }
