@@ -21,6 +21,7 @@ public class FIrstTestCase {
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("bose");
 		driver.findElement(By.id("nav-search-submit-button")).click();
 		driver.findElement(By.linkText("Today's Deals")).click();
+		driver.findElement(By.linkText("Today's Deals")).click();
 		
 	} 
 	
